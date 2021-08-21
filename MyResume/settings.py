@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-nr(h9@sz*0uq5^!^^h*-86d)0zprdadnuj*f$1*%ky*k*_o6*f
 DEBUG = False
 DEBUG_PROPAGATE_EXCEPTIONS = True
 
-ALLOWED_HOSTS = ['ub-resume.herokuapp.com']
+ALLOWED_HOSTS = ['https://ub-resume.herokuapp.com/']
 
 
 # Application definition
