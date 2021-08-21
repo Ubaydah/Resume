@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ubaydah</title>
+	<link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+</head>
+<body style="position: relative;">
+	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<div style="background-color: rgb(138, 219, 181);" class="card card-body h-100  border-info" id="profile-wrapper">
+					<img id="profile-pic" src="{% static 'images/ubay.jpeg' %}" >
+					<hr>
+					<h4 style="color: rgb(10, 88, 52);">Hi I'm Ubaydah Abdulwasiu</h4>
+					<p>I'm a budding software developer majorly focused on the back-end interested in building scalable products.
+						I love reading books, programming and surfing the net
+					</p>
+					<hr>
+					<h5 style="color: rgb(10, 88, 52);">Contact</h5>
+					<ul class="social-links">
+						
+						<li><img class="social" src="{% static 'images/mail.png' %}">abdulwasiuubaydah@gmail.com</li>
+						<li><img class="social" src="{% static 'images/linkedin.png' %}"><a href="https://www.linkedin.com/in/ubaydah-abdulwasiu-924117197/">Ubaydah Abdulwasiu</a></li>
+						<li><img class="social" src="{% static 'images/phone.png' %}">+2348186206702</li>
+						<li><img class="social" src="{% static 'images/location.jpg' %}">Ibadan, Oyo State.</li>
+						<li><img class="social" src="{% static 'images/git.png' %}"><a href="https://github.com/Ubaydah">Ubaydah</a></li>
+					</ul>
+					<hr>
+					<h5 style="color: rgb(10, 88, 52);">Skills</h5>
+					<ul style="list-style-type: disc;">
+						<li>- Python</li>
+						<li>- CSS</li>
+						<li>- HTML</li>
+						<li>- GitHub</li>
+						<li>- Django</li>
+						<li>- Bootstrap</li>
+
+					</ul>
+					<hr>
+					<h5 style="color: rgb(10, 88, 52);">Interests</h5>
+					<p> Programming, Networking, Food, Nature and Photography </p>
+				</div>
+			</div>
+
+			<div class="col-md-5">
+				<div class="card card-body h-70  border-info">
+					<h4 style="color: rgb(10, 88, 52);">Education</h4>
+					<hr>
+					<h6>Federal Science and Technical College, Yaba, Lagos</h6>
+					<p><em>Secondary School Education; WASSCE (2013-2019)</em></p>
+					<br>
+					<h6>University of Ibadan, Oyo State</h6>
+					<p><em>Bsc. Petroleum Engineering (2019-2024)</em></p>
+					<hr>
+					<h4 style="color: rgb(10, 88, 52);">Experience</h4>
+					<hr>
+					<img src="{% static 'images/zuri.jpeg' %}" height="20" width="100">
+					<h6><em>Intern at Zuri Training (Mar-July 2021) </em> </h6>
+					<ul style="list-style-type:disc">
+						<li>- Underwent training on Python and Django</li>
+						<li>- Worked on Python and Django Projects</li>
+						<li>- Gained experience of back-end development using Django</li>
+					</ul>
+					<br>
+					<img src="{% static 'images/hng.jpeg' %}" height="40" width="50">
+					<h6><em>Intern at HNG (present) </em> </h6>
+					<ul style="list-style-type: disc;">
+						<li>- Managed up to two task under Pressure</li>
+						<li>- Worked on a back-end project</li>
+					</ul>
+					<hr>
+					<h4 style="color: rgb(10, 88, 52);">Projects</h4>
+					<hr>
+					<ul style="list-style-type: disc;">
+						<li>- To Do App in django</li>
+						<br>
+						<li>- Blog App to write blog posts</li>
+						<li>- ATM mock up that allows some operation </li>
+					</ul>
+					
+					
+				</div>
+
+				<div class="card card-body h-30  border-info">
+					<h5>Contact me directly for enquiries and questions.</h5>
+					<form method="post">
+						{% csrf_token %}
+						{{form.as_p}}
+						<button class="btn btn-success" type="submit">Submit</button>
+
+					</form>
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+</body>
+</html>
